@@ -1,5 +1,8 @@
 package by.prostrmk.controller;
 
+import by.prostrmk.dao.UserDao;
+import by.prostrmk.model.entity.User;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,13 +22,12 @@ public class AuthController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String username = req.getParameter("username");
-        String password = req.getParameter("password");
-
-        if (password.length() > 3){
-            resp.getWriter().write("ok");
+        User user = new User(req.getParameter("username"), req.getParameter("password"));
+        if (user.getUsername().length() < 4 || user.getPassword().equals("")){
+            resp.getWriter().write("bad username");
         }else{
-            resp.getWriter().write("bad");
+            new UserDao().saveEntity(user);
+            resp.getWriter().write("ok,saved");
         }
 
     }

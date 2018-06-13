@@ -14,7 +14,7 @@
 
 <form method="post" action="/auth">
 
-    <input type="text" id="username" name="username" placeholder="username">
+    <input type="text"  id="username" name="username" placeholder="username">
     <input type="password" id="password" name="password" placeholder="password">
     <input type="submit" value="submit">
 </form>

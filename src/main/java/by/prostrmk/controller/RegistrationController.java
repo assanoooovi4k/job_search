@@ -2,6 +2,7 @@ package by.prostrmk.controller;
 
 import by.prostrmk.dao.UserDao;
 import by.prostrmk.model.entity.User;
+import by.prostrmk.model.util.HibernateUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,26 +11,26 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(value = "/auth")
-public class AuthController extends HttpServlet {
+@WebServlet(value = "/registration")
+public class RegistrationController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/auth.jsp").forward(req, resp);
+        req.getRequestDispatcher("/registration.jsp").forward(req, resp);
+
     }
+
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String username = req.getParameter("username");
-        String password = req.getParameter("password");
-        User user = new User(username, password);
-        if (new UserDao().checkUser(username)){
-            req.getSession().setAttribute("user", user);
-            req.getRequestDispatcher("index.jsp").forward(req,resp);
+        User user = new User(req.getParameter("username"), req.getParameter("password"));
+        if (user.getUsername().length() < 4 || user.getPassword().equals("")){
+            resp.getWriter().write("bad username");
         }else{
-            resp.getWriter().write("No user!");
+            user.setPassword(HibernateUtil.hashString(user.getPassword()));
+            new UserDao().saveEntity(user);
+            resp.getWriter().write("ok,saved");
         }
-
 
     }
 }

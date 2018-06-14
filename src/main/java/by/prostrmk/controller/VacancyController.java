@@ -12,7 +12,6 @@ public class VacancyController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-
+        req.getRequestDispatcher("/vacancies.jsp").forward(req, resp);
     }
 }

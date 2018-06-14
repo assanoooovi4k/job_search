@@ -79,8 +79,8 @@
     <schema id="16" parent="2" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-06-14.13:47:28.284</IntrospectionTimestamp>
-      <IntrospectionStateNumber>562</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-06-14.14:29:30.620</IntrospectionTimestamp>
+      <IntrospectionStateNumber>564</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -127,8 +127,8 @@
       <Type>index</Type>
     </access-method>
     <sequence id="23" parent="16" name="vacancies_id_seq">
-      <ObjectId>16397</ObjectId>
-      <StateNumber>562</StateNumber>
+      <ObjectId>16408</ObjectId>
+      <StateNumber>564</StateNumber>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
@@ -147,8 +147,8 @@
       <StateNumber>558</StateNumber>
     </table>
     <table id="26" parent="16" name="vacancies">
-      <ObjectId>16399</ObjectId>
-      <StateNumber>562</StateNumber>
+      <ObjectId>16410</ObjectId>
+      <StateNumber>564</StateNumber>
     </table>
     <column id="27" parent="25" name="id">
       <Position>1</Position>
@@ -186,7 +186,7 @@
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>562</StateNumber>
+      <StateNumber>564</StateNumber>
       <DefaultExpression>nextval(&apos;vacancies_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>vacancies_id_seq</SequenceName>
@@ -194,34 +194,40 @@
     <column id="33" parent="26" name="username">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>564</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="34" parent="26" name="title">
       <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>564</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="35" parent="26" name="content">
+      <Position>4</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>564</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="35" parent="26" name="salary">
-      <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>562</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="36" parent="26" name="date">
+    <column id="36" parent="26" name="salary">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>564</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="37" parent="26" name="vacancies_pkey">
-      <ObjectId>16406</ObjectId>
+    <column id="37" parent="26" name="date">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>564</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="38" parent="26" name="vacancies_pkey">
+      <ObjectId>16417</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="38" parent="26" name="vacancies_pkey">
-      <ObjectId>16407</ObjectId>
+    <key id="39" parent="26" name="vacancies_pkey">
+      <ObjectId>16418</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>vacancies_pkey</UnderlyingIndexName>
       <Primary>1</Primary>

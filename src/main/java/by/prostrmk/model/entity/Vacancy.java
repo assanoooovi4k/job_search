@@ -22,20 +22,25 @@ public class Vacancy implements IEntity {
     @Column(name = "salary")
     private String salary;
 
+    @Column(name = "content")
+    private String content;
+
     public Vacancy() {
     }
 
-    public Vacancy(String username, String title, String salary) {
+    public Vacancy(String username, String title, String salary, String content) {
         this.username = username;
         this.title = title;
         this.salary = salary;
+        this.content = content;
     }
 
-    public Vacancy(String username, String title, String date, String salary) {
+    public Vacancy(String username, String title, String date, String salary, String content) {
         this.username = username;
         this.title = title;
         this.date = date;
         this.salary = salary;
+        this.content = content;
     }
 
     public Long getId() {
@@ -78,6 +83,14 @@ public class Vacancy implements IEntity {
         this.salary = salary;
     }
 
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
     @Override
     public String toString() {
         return "Vacancy{" +
@@ -86,6 +99,7 @@ public class Vacancy implements IEntity {
                 ", title='" + title + '\'' +
                 ", date='" + date + '\'' +
                 ", salary='" + salary + '\'' +
+                ", content='" + content + '\'' +
                 '}';
     }
 }

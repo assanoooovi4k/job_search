@@ -13,13 +13,7 @@
 
 </head>
 <body class="w3-light-grey">
-<div class="w3-bar w3-white w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Jobs for you</a>
-    <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Find a worker</a>
-    <a href="#about" class="w3-bar-item w3-button w3-mobile">Find a job</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-mobile">Leave a resume</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Your room</a>
-</div>
+<jsp:include page="navbar.jsp"/>
 
 </body>
 </html>

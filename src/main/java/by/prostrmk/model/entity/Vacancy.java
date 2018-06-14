@@ -3,7 +3,7 @@ package by.prostrmk.model.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "vacancies")
+@Table(name = "Vacancies")
 public class Vacancy implements IEntity {
 
     @Id

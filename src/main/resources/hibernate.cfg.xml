@@ -4,15 +4,16 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://localhost:5432/jobs_search</property>
-        <property name="connection.username">postgres</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/JobSearch</property>
+        <property name="connection.username">root</property>
         <property name="connection.password">0</property>
-        <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="show_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
         <mapping package="by.prostrmk.model.entity"/>
         <mapping class="by.prostrmk.model.entity.User"/>
+        <mapping class="by.prostrmk.model.entity.Vacancy"/>
 
 
 

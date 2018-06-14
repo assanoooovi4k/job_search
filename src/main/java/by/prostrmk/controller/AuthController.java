@@ -25,11 +25,13 @@ public class AuthController extends HttpServlet {
         User user = new User(username, HibernateUtil.hashString(password));
         UserDao userDao = new UserDao();
         User baseUser = (User)userDao.getByStringParamUnique("username", user.getUsername(), User.class);
-        if (user.getPassword().equals(baseUser.getPassword()) && user.getUsername().equals(baseUser.getUsername())){
-            req.getSession().setAttribute("user", user);
-            req.getRequestDispatcher("index.jsp").forward(req,resp);
-        }else{
-            resp.getWriter().write("No user!");
+        if (baseUser != null){
+            if (user.getPassword().equals(baseUser.getPassword()) && user.getUsername().equals(baseUser.getUsername())){
+                req.getSession().setAttribute("user", user);
+                req.getRequestDispatcher("index.jsp").forward(req,resp);
+            }else{
+                resp.getWriter().write("No user!");
+            }
         }
 
 

@@ -11,7 +11,7 @@ public class HibernateUtil {
     private static SessionFactory sessionFactory = null;
     static {
         try {
-//            sessionFactory em = getSessionFactory().openSession();
+//            sessionFactory = getSessionFactory().openSession();
             sessionFactory = new Configuration().configure().buildSessionFactory();
         } catch (Exception e) {
             System.out.println(":(");

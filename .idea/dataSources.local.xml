@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="jobs_search@localhost" uuid="3cb600c9-4610-4de3-a2b2-91c7b25e8426">
-      <database-info product="PostgreSQL" version="10.4 (Ubuntu 10.4-0ubuntu0.18.04)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
-        <identifier-quote-string>&quot;</identifier-quote-string>
+    <data-source name="JobSearch@localhost" uuid="0d7bb813-816a-472b-9a34-c2b12fc03a53">
+      <database-info product="MySQL" version="5.7.22-0ubuntu18.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
       </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <user-name>postgres</user-name>
-      <introspection-schemas>jobs_search:public</introspection-schemas>
+      <user-name>root</user-name>
+      <introspection-schemas>*:JobSearch</introspection-schemas>
     </data-source>
   </component>
 </project>

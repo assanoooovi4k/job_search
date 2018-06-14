@@ -1,11 +1,9 @@
--- CREATE TABLE Users(
---   id SERIAL PRIMARY KEY,
---   username VARCHAR(255),
---   password VARCHAR(255)
---
--- )
+ CREATE TABLE Users(
+   id SERIAL PRIMARY KEY,
+   username VARCHAR(255),
+   password VARCHAR(255)
+);
 
---   DROP TABLE vacancies
 CREATE TABLE Vacancies(
   id SERIAL PRIMARY KEY,
   username VARCHAR(255),

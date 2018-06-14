@@ -21,26 +21,25 @@
     </style>
 </head>
 <body>
-<div class="w3-bar w3-white w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Jobs for you</a>
-    <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Find a worker</a>
-    <a href="#about" class="w3-bar-item w3-button w3-mobile">Find a job</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-mobile">Leave a resume</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Your room</a>
-</div>
+<jsp:include page="navbar.jsp"/>
+<div class="w3-card-4">
 
     <%
         List<Vacancy> list = (List<Vacancy>) new VacancyDao().getAllVacancies();
         PrintWriter writer = response.getWriter();
         for (Vacancy o : list) {
-            writer.write("<div><h1>" + o.getTitle()+"</h1>" +
-                    "<h6>" +o.getUsername() + "</h6>" +
-                    "<h4>" + o.getSalary() + "</h4>" +
+            out.println("<div class='w3-card-4 w3-pale-yellow'" +
+                    "<header class='w3-container'><h1>" + o.getTitle()+"</h1></header>" +
+                    "<h6>Username: " + o.getUsername() + "</h6>" +
+                    "<h4>Salary: " + o.getSalary() + "</h4>" +
                     "<p>" + o.getContent() + "</p>" +
-                    "<h6>" + o.getDate() + "</p>" +
-                    "<br><br><br><br><br>");
+                    "<footer class='w3-container'><h6>Date: " + o.getDate() + "</p></footer>" +
+                    "<br><br><br><br><br></div>");
         }
     %>
+
+</div>
+
 
 
 </body>

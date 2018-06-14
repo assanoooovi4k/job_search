@@ -4,3 +4,11 @@
 --   password VARCHAR(255)
 --
 -- )
+
+-- CREATE TABLE Vacancies(
+--   id SERIAL PRIMARY KEY,
+--   username VARCHAR(255),
+--   title TEXT,
+--   salary VARCHAR(255),
+--   date VARCHAR(255)
+-- )

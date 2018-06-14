@@ -2,7 +2,7 @@ package by.prostrmk.controller;
 
 import by.prostrmk.dao.UserDao;
 import by.prostrmk.model.entity.User;
-
+import by.prostrmk.model.util.HibernateUtil;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,8 +22,10 @@ public class AuthController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        User user = new User(username, password);
-        if (new UserDao().checkUser(username)){
+        User user = new User(username, HibernateUtil.hashString(password));
+        UserDao userDao = new UserDao();
+        User baseUser = (User)userDao.getByStringParamUnique("username", user.getUsername(), User.class);
+        if (user.getPassword().equals(baseUser.getPassword()) && user.getUsername().equals(baseUser.getUsername())){
             req.getSession().setAttribute("user", user);
             req.getRequestDispatcher("index.jsp").forward(req,resp);
         }else{

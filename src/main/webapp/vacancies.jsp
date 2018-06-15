@@ -33,7 +33,7 @@
                     "<h6>Username: " + o.getUsername() + "</h6>" +
                     "<h4>Salary: " + o.getSalary() + "</h4>" +
                     "<p>" + o.getContent() + "</p>" +
-                    "<footer class='w3-container'><h6>Date: " + o.getDate() + "</p></footer>" +
+                    "<h6>Date: " + o.getDate() + "</p>" +
                     "<br><br><br><br><br></div>");
         }
     %>

@@ -22,6 +22,7 @@
     </style>
 </head>
 <body>
+<jsp:include page="navbar.jsp"/>
 
 <%
     VacancyDao vacancyDao = new VacancyDao();

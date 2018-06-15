@@ -16,7 +16,7 @@ public class PersonalRoomController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         User user = (User) req.getSession().getAttribute("user");
         if (user == null){
-            resp.sendRedirect("/");
+            req.getRequestDispatcher("/auth.jsp").forward(req,resp);
         }
         req.getRequestDispatcher("/me.jsp").forward(req,resp);
 

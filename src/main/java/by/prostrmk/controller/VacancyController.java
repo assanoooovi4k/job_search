@@ -1,6 +1,7 @@
 package by.prostrmk.controller;
 
 import by.prostrmk.dao.VacancyDao;
+import by.prostrmk.model.entity.Vacancy;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,6 +17,9 @@ public class VacancyController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String[] params = req.getRequestURI().split("/");
+        String id = params[params.length - 1];
+        req.setAttribute("o", new VacancyDao().getById(Long.valueOf(id), Vacancy.class));
         req.getRequestDispatcher("/uservacancy.jsp").forward(req, resp);
 
     }

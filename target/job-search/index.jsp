@@ -1,3 +1,7 @@
+<%@ page import="by.prostrmk.dao.VacancyDao" %>
+<%@ page import="by.prostrmk.model.entity.Vacancy" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -14,6 +18,24 @@
 </head>
 <body class="w3-light-grey">
 <jsp:include page="navbar.jsp"/>
+
+<div class="w3-content">
+    <%
+        VacancyDao vacancyDao = new VacancyDao();
+        List<Vacancy> vacancyList = vacancyDao.getAll("id", Vacancy.class);
+
+        for (Vacancy o : vacancyList) {
+            out.println("<div class='w3-card-4'>" +
+                    "<h2>" + o.getTitle() + "</h2>" +
+                    "<h5>" + o.getSalary() + "</h5>" +
+                    "<h6>" + o.getDate() + "</h6>" +
+                    "<p>" + o.getContent() + "</p>" +
+                    "</div>");
+        }
+
+    %>
+
+</div>
 
 </body>
 </html>

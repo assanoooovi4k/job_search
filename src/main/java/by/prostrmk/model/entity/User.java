@@ -1,10 +1,11 @@
 package by.prostrmk.model.entity;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "Users")
-public class User implements IEntity{
+public class User implements IEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,6 +13,9 @@ public class User implements IEntity{
 
     @Column(name = "username")
     private String username;
+
+    @Column(name = "mail")
+    private String mail;
 
     @Column(name = "password")
     private String password;
@@ -21,6 +25,12 @@ public class User implements IEntity{
 
     public User(String username) {
         this.username = username;
+    }
+
+    public User(String username, String mail, String password) {
+        this.username = username;
+        this.mail = mail;
+        this.password = password;
     }
 
     public User(String username, String password) {
@@ -52,8 +62,42 @@ public class User implements IEntity{
         this.password = password;
     }
 
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(id, user.id) &&
+                Objects.equals(username, user.username) &&
+                Objects.equals(mail, user.mail) &&
+                Objects.equals(password, user.password);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id, username, mail, password);
+    }
+
     @Override
     public String toJspString() {
         return "Username: " + username + "\nId: " + id;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", mail='" + mail + '\'' +
+                '}';
     }
 }

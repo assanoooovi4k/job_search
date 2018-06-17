@@ -6,6 +6,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Random;
 
 
 public class MailUtil {
@@ -37,6 +38,16 @@ public class MailUtil {
         transport.connect(username, password);
         transport.sendMessage(message, message.getAllRecipients());
         transport.close();
+    }
+
+    public String token() {
+        char[]  alphabet = "zxcvbnmasdfghjklqwertyuiop1234567890ZXCVBNMASDFGHJKLQWERTYUIOP".toCharArray();
+        Random random = new Random();
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < 20; i++) {
+            stringBuilder.append(alphabet[random.nextInt(alphabet.length - 1)]);
+        }
+        return stringBuilder.toString();
     }
 
 

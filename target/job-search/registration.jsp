@@ -15,6 +15,7 @@
 <form method="post" action="/registration">
 
     <input type="text"  id="username" name="username" placeholder="username">
+    <input type="text" id="mail" name="mail" placeholder="mail">
     <input type="password" id="password" name="password" placeholder="password">
     <input type="submit" value="submit">
 </form>

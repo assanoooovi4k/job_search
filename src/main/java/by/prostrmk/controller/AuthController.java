@@ -27,7 +27,7 @@ public class AuthController extends HttpServlet {
         User baseUser = (User)userDao.getByStringParamUnique("username", user.getUsername(), User.class);
         if (baseUser != null){
             if (user.getPassword().equals(baseUser.getPassword()) && user.getUsername().equals(baseUser.getUsername())){
-                req.getSession().setAttribute("user", user);
+                req.getSession().setAttribute("user", baseUser);
                 req.getRequestDispatcher("index.jsp").forward(req,resp);
             }else{
                 resp.getWriter().write("No user!");

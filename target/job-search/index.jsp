@@ -33,12 +33,7 @@
         List<Vacancy> vacancyList = vacancyDao.getAll("id", Vacancy.class);
 
         for (Vacancy o : vacancyList) {
-            out.println("<div class='w3-card-4'>" +
-                    "<h2>" + o.getTitle() + "</h2>" +
-                    "<h5>" + o.getSalary() + "</h5>" +
-                    "<h6>" + o.getDate() + "</h6>" +
-                    "<p>" + o.getContent() + "</p>" +
-                    "</div>");
+            out.println(o.toJspString());
         }
 
     %>

@@ -27,7 +27,7 @@ public class CreateVacancyController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
         User user = (User) req.getSession().getAttribute("user");
-        Vacancy vacancy = new Vacancy(user.getUsername(), req.getParameter("title"), new Date().toString(), req.getParameter("salary"), req.getParameter("content"));
+        Vacancy vacancy = new Vacancy(user.getMail(), user.getUsername(), req.getParameter("title"), new Date().toString(), req.getParameter("salary"), req.getParameter("content"));
         VacancyDao vacancyDao = new VacancyDao();
         vacancyDao.saveEntity(vacancy);
     }

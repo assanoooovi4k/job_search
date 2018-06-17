@@ -31,21 +31,20 @@
     List<Resume> resumes = (List<Resume>)vacancyDao.getByStringParamList("username", user.getUsername(), Resume.class);
     if (!vacancies.isEmpty()){
         for (Vacancy vacancy : vacancies) {
-            out.println("<h2>My vacancies: </h2>" +
-                    "<div class='w3-card-4'>" +
-                    "Title: " + vacancy.getTitle() +
-                    "Salary: " + vacancy.getSalary() +
-                    "Content: " + vacancy.getContent() +
-                    "</div>");
+            out.println("vacancies");
+            out.println(vacancy.toJspString());
+            out.println("<form action='/me/removeVacancy/id="+ vacancy.getId() +"' method='post'>");
+            out.println("<button>Delete</button>");
+            out.println("</form>");
         }
     }
     if (!resumes.isEmpty()){
         for (Resume resume : resumes) {
-            out.println("<h2>My vacancies: </h2>" +
-                    "<div class='w3-card-4'>" +
-                    "Title: " + resume.getTitle() +
-                    "Content: " + resume.getContent()+
-                    "</div>");
+            out.println("resumes");
+            out.println(resume.toJspString());
+            out.println("<form action='/me/removeResume/id="+ resume.getId() +"' method='post'>");
+            out.println("<button>Delete</button>");
+            out.println("</form>");
         }
     }
 

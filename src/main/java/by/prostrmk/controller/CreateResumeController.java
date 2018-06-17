@@ -26,7 +26,7 @@ public class CreateResumeController extends HttpServlet {
         if (user == null){
             resp.sendRedirect("/auth.jsp");
         }else{
-            Resume resume = new Resume(user.getUsername(), req.getParameter("university"), req.getParameter("title"), req.getParameter("content"));
+            Resume resume = new Resume(user.getMail(),user.getUsername(), req.getParameter("university"), req.getParameter("title"), req.getParameter("content"));
             Dao dao = new VacancyDao();
             dao.saveEntity(resume);
         }

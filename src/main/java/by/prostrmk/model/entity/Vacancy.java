@@ -10,6 +10,9 @@ public class Vacancy implements IEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "mail")
+    private String mail;
+
     @Column(name = "username")
     private String username;
 
@@ -35,13 +38,23 @@ public class Vacancy implements IEntity {
         this.content = content;
     }
 
-    public Vacancy(String username, String title, String date, String salary, String content) {
+    public Vacancy(String mail, String username, String title, String date, String salary, String content) {
+        this.mail = mail;
         this.username = username;
         this.title = title;
         this.date = date;
         this.salary = salary;
         this.content = content;
     }
+
+    //
+//    public Vacancy(String username, String title, String date, String salary, String content) {
+//        this.username = username;
+//        this.title = title;
+//        this.date = date;
+//        this.salary = salary;
+//        this.content = content;
+//    }
 
     public Long getId() {
         return id;
@@ -91,11 +104,20 @@ public class Vacancy implements IEntity {
         this.content = content;
     }
 
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
     @Override
     public String toJspString() {
         return "<div class='w3-card-4 w3-pale-yellow'" +
                 "<header class='w3-container'><h1>" + getTitle()+"</h1></header>" +
                 "<h6>Username: " + getUsername() + "</h6>" +
+                "<h6>Mail: " + getMail() + "</h6>" +
                 "<h4>Salary: " + getSalary() + "</h4>" +
                 "<p>" + getContent() + "</p>" +
                 "<h6>Date: " + getDate() + "</p>" +
@@ -106,6 +128,7 @@ public class Vacancy implements IEntity {
     public String toString() {
         return "Vacancy{" +
                 "id=" + id +
+                ", mail='" + mail + '\'' +
                 ", username='" + username + '\'' +
                 ", title='" + title + '\'' +
                 ", date='" + date + '\'' +

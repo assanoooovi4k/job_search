@@ -13,6 +13,7 @@
 <html>
 <head>
     <title>Resumes</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -29,12 +30,7 @@
 <%
     List<Resume> list = (List<Resume>) new VacancyDao().getAll("username", Resume.class);
     for (Resume o : list) {
-        out.println("<div class='w3-card-4 w3-pale-yellow'" +
-                "<header class='w3-container'><h1>" + o.getTitle()+"</h1></header>" +
-                "<h6>Username: " + o.getUsername() + "</h6>" +
-                "<h4>University: " + o.getUniversity() + "</h4>" +
-                "<p>" + o.getContent() + "</p>" +
-                "<br><br><br><br><br></div>");
+        out.println(o.toJspString());
     }
 %>
 

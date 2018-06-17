@@ -7,19 +7,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f453362f-ef01-4066-9ef0-bcaebfcfba44" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/SubmitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RemoveResumeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RemoveVacancyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/0d7bb813-816a-472b-9a34-c2b12fc03a53.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0d7bb813-816a-472b-9a34-c2b12fc03a53.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/prostrmk/model/util/MailUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/model/util/MailUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateResumeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateVacancyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateVacancyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Resume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Vacancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Vacancy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/script.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/prostrmk/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/prostrmk/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/prostrmk/model/util/MailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/prostrmk/model/util/MailUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/model/util/MailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/model/util/MailUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/me.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/me.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resumes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resumes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/prostrmk/controller/CreateResumeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/prostrmk/controller/CreateResumeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/prostrmk/controller/CreateVacancyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/prostrmk/controller/CreateVacancyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/prostrmk/model/entity/Resume.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/prostrmk/model/entity/Resume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/prostrmk/model/entity/Vacancy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/prostrmk/model/entity/Vacancy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/script.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/controller/CreateResumeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/controller/CreateResumeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/controller/CreateVacancyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/controller/CreateVacancyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/model/entity/Resume.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/model/entity/Resume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/model/entity/Vacancy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/by/prostrmk/model/entity/Vacancy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-search/WEB-INF/classes/script.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/job-search/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-search/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/job-search/me.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-search/me.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/job-search/resumes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-search/resumes.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,20 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="CreateVacancyController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateVacancyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/model/util/MailUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+            <state relative-caret-position="345">
+              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/MainController.java">
+      <file leaf-file-name="CreateResumeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateResumeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="324">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -100,17 +103,35 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+            <state relative-caret-position="266">
+              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RegistrationController.java">
+      <file leaf-file-name="resumes.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resumes.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="34" column="121" selection-start-line="34" selection-start-column="121" selection-end-line="34" selection-end-column="121" />
+            <state relative-caret-position="36">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="me.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/me.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoveVacancyController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RemoveVacancyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,20 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/AuthController.java">
+      <file leaf-file-name="RemoveResumeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RemoveResumeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="302">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,27 +151,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1764#1765#0" expanded="true" />
-                <element signature="e#1826#1827#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="Resume" pinned="false" current-in-tab="false">
+        <entry file="das://0d7bb813-816a-472b-9a34-c2b12fc03a53/schema/JobSearch/table/Resume">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubmitController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/SubmitController.java">
+      <file leaf-file-name="Vacancy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Vacancy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+              <caret line="40" column="108" selection-start-line="40" selection-start-column="108" selection-end-line="40" selection-end-column="108" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1919#1920#0" expanded="true" />
+                <element signature="e#1946#1947#0" expanded="true" />
+                <element signature="e#1986#1987#0" expanded="true" />
+                <element signature="e#2018#2019#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resume.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Resume.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="30" column="98" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
+              <folding>
+                <element signature="e#1517#1518#0" expanded="true" />
+                <element signature="e#1544#1545#0" expanded="true" />
+                <element signature="e#1584#1585#0" expanded="true" />
+                <element signature="e#1616#1617#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,14 +215,11 @@
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/dao/VacancyDAo.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/dao/VacancyDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/newVacancy.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateVacancyController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/navbar.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/VacanciesController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/newResume.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateResumeController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/ResumesController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/me.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/PersonalRoomController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/auth.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/VacancyController.java" />
@@ -205,25 +227,31 @@
         <option value="$PROJECT_DIR$/src/main/webapp/navbar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/vacancies.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/IEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Resume.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Vacancy.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/dao/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/search.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/search.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resumes.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/SearchVacanciesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/SearchResumesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/model/util/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mail.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/model/util/MailUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/SubmitController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/script.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/registration.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/AuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/script.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Vacancy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Resume.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateVacancyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateResumeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resumes.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RemoveController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/me.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RemoveResumeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RemoveVacancyController.java" />
       </list>
     </option>
   </component>
@@ -541,12 +569,20 @@
       <workItem from="1529080189004" duration="6522000" />
       <workItem from="1529149093187" duration="3824000" />
       <workItem from="1529229479582" duration="5636000" />
-      <workItem from="1529250612740" duration="5895000" />
+      <workItem from="1529250612740" duration="9290000" />
     </task>
+    <task id="LOCAL-00001" summary="add mail verification">
+      <created>1529256605742</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1529256605742</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45538000" />
+    <option name="totallyTimeSpent" value="48933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1016" extended-state="6" />
@@ -559,7 +595,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.18697916" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18697916" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -571,17 +607,17 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.375" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.375" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Persistence" order="3" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1734375" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32894737" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1734375" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32894737" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -630,18 +666,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add mail verification" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mail verification" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3cb600c9-4610-4de3-a2b2-91c7b25e8426/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/dao/Dao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -665,31 +699,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateVacancyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0d7bb813-816a-472b-9a34-c2b12fc03a53/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/navbar.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/newVacancy.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateResumeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/newResume.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -720,20 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0d7bb813-816a-472b-9a34-c2b12fc03a53/schema/JobSearch/table/Resume">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/me.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -808,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resumes.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/SearchVacanciesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -834,20 +826,6 @@
             <element signature="e#710#711#0" expanded="true" />
             <element signature="e#769#770#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Vacancy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Resume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="79" column="64" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="79" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -923,13 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/script.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-start-column="2" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -937,10 +908,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/newVacancy.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        <state relative-caret-position="198">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -948,6 +929,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/script.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -963,27 +968,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Vacancy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="320">
+          <caret line="40" column="108" selection-start-line="40" selection-start-column="108" selection-end-line="40" selection-end-column="108" />
+          <folding>
+            <element signature="e#1919#1920#0" expanded="true" />
+            <element signature="e#1946#1947#0" expanded="true" />
+            <element signature="e#1986#1987#0" expanded="true" />
+            <element signature="e#2018#2019#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/model/entity/Resume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="98" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
+          <folding>
+            <element signature="e#1517#1518#0" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
+            <element signature="e#1584#1585#0" expanded="true" />
+            <element signature="e#1616#1617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateVacancyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/AuthController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/CreateResumeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+        <state relative-caret-position="324">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RegistrationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="34" column="121" selection-start-line="34" selection-start-column="121" selection-end-line="34" selection-end-column="121" />
+        <state relative-caret-position="266">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resumes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/me.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0d7bb813-816a-472b-9a34-c2b12fc03a53/schema/JobSearch/table/Resume">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RemoveResumeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/prostrmk/controller/RemoveVacancyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

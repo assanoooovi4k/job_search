@@ -59,6 +59,11 @@
 
         <!--HIBERNATE-->
 
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>RELEASE</version>
+        </dependency>
 
         <dependency>
             <groupId>commons-codec</groupId>

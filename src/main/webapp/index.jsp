@@ -2,6 +2,8 @@
 <%@ page import="by.prostrmk.model.entity.Vacancy" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="by.prostrmk.model.util.MailUtil" %>
+<%@ page import="javax.mail.MessagingException" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -21,6 +23,12 @@
 
 <div class="w3-content">
     <%
+        try {
+            new MailUtil("brinkpool@gmail.com","Brinkpool1999").send("lel","text of message", "prostrmk@gmail.com");
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+
         VacancyDao vacancyDao = new VacancyDao();
         List<Vacancy> vacancyList = vacancyDao.getAll("id", Vacancy.class);
 

@@ -23,7 +23,9 @@
 </head>
 <body>
 <jsp:include page="navbar.jsp"/>
-
+<form action="/searchResumes" method="get">
+    <input type="text" name="search" placeholder="Search..">
+</form>
 <%
     List<Resume> list = (List<Resume>) new VacancyDao().getAll("username", Resume.class);
     for (Resume o : list) {

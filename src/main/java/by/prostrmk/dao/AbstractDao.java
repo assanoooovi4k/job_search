@@ -110,6 +110,7 @@ public abstract class AbstractDao implements Dao{
             return query.list();
         } catch (Exception e) {
 //            logger.error("Search Error");
+            System.out.println("error!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" + e);
             return new ArrayList();
         } finally {
             assert session != null;

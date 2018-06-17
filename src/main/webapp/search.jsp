@@ -33,23 +33,12 @@
     <input type="text" name="search" placeholder="Search..">
 </form>
 <%
-//    try{
-//        List<IEntity> searchList = (List<IEntity>) request.getAttribute("searchList");
 
-    String[] params = request.getRequestURI().split("/");
-    String searchKey = params[params.length - 1];
-    VacancyDao vacancyDao = new VacancyDao();
-    List<IEntity> searchList = (List<IEntity>) vacancyDao.search("title", "Vacancies", searchKey);
+    List<IEntity> list = (List<IEntity>)request.getSession().getAttribute("searchList");
+    for (IEntity iEntity : list) {
+        out.println(iEntity.toJspString());
+    }
 
-    if (!searchList.isEmpty()){
-            for (IEntity iEntity : searchList) {
-                out.println(iEntity.toJspString());
-            }
-        }
-//    }catch (Exception e){
-//
-//        out.println( e + "No coincidences");
-//    }
 
 %>
 

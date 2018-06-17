@@ -15,10 +15,15 @@ public class SearchVacanciesController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String[] params = req.getRequestURI().split("/");
-        String searchKey = params[params.length - 1];
+        String searchKey = req.getParameter("search");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(searchKey);
+        }
         VacancyDao vacancyDao = new VacancyDao();
-        List searchVacancies = vacancyDao.search("title", "Vacancies", searchKey);
+        List searchVacancies = vacancyDao.search("title", "Vacancy", searchKey);
+        for (Object searchVacancy : searchVacancies) {
+            System.out.println(searchVacancy.toString());
+        }
         req.getSession().setAttribute("searchList", searchVacancies);
         req.getRequestDispatcher("/search.jsp").forward(req, resp);
 

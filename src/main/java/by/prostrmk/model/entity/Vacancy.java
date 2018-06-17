@@ -92,6 +92,17 @@ public class Vacancy implements IEntity {
     }
 
     @Override
+    public String toJspString() {
+        return "<div class='w3-card-4 w3-pale-yellow'" +
+                "<header class='w3-container'><h1>" + getTitle()+"</h1></header>" +
+                "<h6>Username: " + getUsername() + "</h6>" +
+                "<h4>Salary: " + getSalary() + "</h4>" +
+                "<p>" + getContent() + "</p>" +
+                "<h6>Date: " + getDate() + "</p>" +
+                "<br><br><br><br><br></div>";
+    }
+
+    @Override
     public String toString() {
         return "Vacancy{" +
                 "id=" + id +

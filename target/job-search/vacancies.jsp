@@ -18,12 +18,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+        input[type=text] {
+            width: 130px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+        input[type=text]:focus {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
 <jsp:include page="navbar.jsp"/>
 <div class="w3-card-4">
 
+    <form action="/searchVacancies" method="get">
+        <input type="text" name="search" placeholder="Search..">
+    </form>
     <%
         List<Vacancy> list = (List<Vacancy>) new VacancyDao().getAllVacancies();
         PrintWriter writer = response.getWriter();

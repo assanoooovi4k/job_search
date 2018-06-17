@@ -51,4 +51,9 @@ public class User implements IEntity{
     public void setPassword(String password) {
         this.password = password;
     }
+
+    @Override
+    public String toJspString() {
+        return "Username: " + username + "\nId: " + id;
+    }
 }

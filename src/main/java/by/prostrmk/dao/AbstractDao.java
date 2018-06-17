@@ -3,9 +3,11 @@ package by.prostrmk.dao;
 import by.prostrmk.model.entity.IEntity;
 import by.prostrmk.model.util.HibernateUtil;
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AbstractDao implements Dao{
@@ -96,6 +98,22 @@ public abstract class AbstractDao implements Dao{
             if (session != null && session.isOpen()) {
                 session.close();
             }
+        }
+    }
+
+    public List search(String column,String table, String searchString) {
+        Session session = null;
+        try {
+            session = HibernateUtil.getSessionFactory().openSession();
+            String hql = new StringBuilder().append("FROM ").append(table).append(" WHERE ").append(column).append(" LIKE '%").append(searchString).append("%'").toString();//
+            Query query = session.createQuery(hql);//
+            return query.list();
+        } catch (Exception e) {
+//            logger.error("Search Error");
+            return new ArrayList();
+        } finally {
+            assert session != null;
+            session.close();
         }
     }
 

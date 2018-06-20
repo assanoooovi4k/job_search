@@ -24,17 +24,17 @@
 <div class="w3-content">
     <%
         try {
-            new MailUtil("brinkpool@gmail.com","Brinkpool1999").send("lel","text of message", "prostrmk@gmail.com");
+            new MailUtil("assanoooovi4ksite@gmail.com","Twixpool1999").send("Hello","Hello!", "brinkpool@gmail.com");
         } catch (MessagingException e) {
             e.printStackTrace();
         }
-
-        VacancyDao vacancyDao = new VacancyDao();
-        List<Vacancy> vacancyList = vacancyDao.getAll("id", Vacancy.class);
-
-        for (Vacancy o : vacancyList) {
-            out.println(o.toJspString());
-        }
+//
+//        VacancyDao vacancyDao = new VacancyDao();
+//        List<Vacancy> vacancyList = vacancyDao.getAll("id", Vacancy.class);
+//
+//        for (Vacancy o : vacancyList) {
+//            out.println(o.toJspString());
+//        }
 
     %>
 
